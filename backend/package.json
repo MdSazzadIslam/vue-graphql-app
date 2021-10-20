@@ -4,7 +4,20 @@
   "description": "A simple node, graphql and typescript application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf build",
+    "prebuild": "npm run clean",
+    "start-production": "node build/server.js",
+    "start": "node src/server.ts",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "watch-ts": "tsc -w",
+    "format": "prettier --write \"{src,tests,examples}/**/*.{ts,js}\" \"docs/**/*.md\"",
+    "check:type": "tsc --noEmit && tsc --noEmit -p ./examples/tsconfig.json",
+    "check": "npm run check:format && npm run check:type",
+    "check:format": "prettier --check \"{src,tests,examples}/**/*.{ts,js}\" \"docs/**/*.md\"",
+    "lint": "tslint --project tsconfig.json",
+    "verify": "npm run check && npm run lint",
+    "build:dev": "nodemon src/server.ts --exec ts-node src/server.ts -e ts,graphql"
   },
   "keywords": [
     "node.js",
