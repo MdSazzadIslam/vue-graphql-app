@@ -1,0 +1,26 @@
+type Machine {
+  name: String!
+  sensors: [Sensors!]
+  lastKnownPosition: GPSPosition
+}
+
+type Sensor {
+  name: String!
+  machine: Machine!
+}
+
+type SensorDataPoint {
+  timestamp: DateTime!
+  value: Float!
+}
+
+type Query {
+
+  machine(where: MachineWhereUniqInput!): Machine
+  machines: [Machine!]
+  sensorData(id: ID!, from: DateTime!, to: DateTime!): [SensorDataPoint]
+}
+
+type Mutation {
+  
+}
