@@ -9,7 +9,7 @@ config();
 
 (async () => {
   const typeDefs = gql(
-    fs.readFileSync(path.resolve(__dirname, "gql", "schemas/schema.gql"), {
+    fs.readFileSync(path.resolve(__dirname, "gql", "schema/index.gql"), {
       encoding: "utf-8",
     }),
   );

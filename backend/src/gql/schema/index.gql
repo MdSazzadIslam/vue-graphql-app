@@ -1,23 +1,29 @@
+scalar Date
+
 type Machine {
   name: String!
   sensors: [Sensor!]
   lastKnownPosition: GPSPosition
 }
 
+type GPSPosition {
+  lat: String
+  log: String
+}
 type Sensor {
   name: String!
   machine: Machine!
 }
 
 type SensorDataPoint {
-  timestamp: DateTime!
+  timestamp: Date!
   value: Float!
 }
 
 type Query {
   machine(where: ID!): Machine
   machines: [Machine!]
-  sensorData(id: ID!, from: DateTime!, to: DateTime!): [SensorDataPoint]
+  sensorData(id: ID!, from: Date!, to: Date!): [SensorDataPoint]
 }
 
 type Mutation {
