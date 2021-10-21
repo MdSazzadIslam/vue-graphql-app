@@ -36,6 +36,7 @@
     "express-winston": "^4.2.0",
     "graphql": "^15.6.1",
     "graphql-tools": "^8.2.0",
+    "mongoose": "^6.0.11",
     "winston": "^3.3.3"
   },
   "devDependencies": {

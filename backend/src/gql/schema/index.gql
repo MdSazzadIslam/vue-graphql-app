@@ -1,6 +1,6 @@
 type Machine {
   name: String!
-  sensors: [Sensors!]
+  sensors: [Sensor!]
   lastKnownPosition: GPSPosition
 }
 
@@ -15,12 +15,11 @@ type SensorDataPoint {
 }
 
 type Query {
-
-  machine(where: MachineWhereUniqInput!): Machine
+  machine(where: ID!): Machine
   machines: [Machine!]
   sensorData(id: ID!, from: DateTime!, to: DateTime!): [SensorDataPoint]
 }
 
 type Mutation {
-  
+  addMachine(name: String): Machine
 }
