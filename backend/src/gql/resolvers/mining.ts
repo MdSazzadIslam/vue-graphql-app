@@ -2,6 +2,7 @@ import { IResolvers } from "@graphql-tools/utils";
 import { GraphQLResolveInfo } from "graphql";
 import Machine from "../../../machinedata.json";
 import Sensor from "../../../sensorData.json";
+import { IMachine } from "../../types";
 
 const miningResolver: IResolvers = {
   Query: {
