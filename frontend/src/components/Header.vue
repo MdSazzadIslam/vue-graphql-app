@@ -1,0 +1,53 @@
+<template functional>
+  <header>
+    <div class="header">
+      <router-link to="/">Home</router-link>
+    </div>
+  </header>
+</template>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component
+export default class Header extends Vue {}
+</script>
+
+<style>
+.header {
+  background-color: #24252a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  cursor: pointer;
+  height: 30px;
+}
+.header_container {
+  list-style: none;
+  order: 1;
+}
+.header_nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.header_nav li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.header_nav li a:hover {
+  color: white;
+}
+.header_input {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+</style>
