@@ -10,6 +10,8 @@ A simple Node, GraphQL, Vue, and TypeScript application.
 
 > Typescript
 
+> GraphQL
+
 > Vue
 
 
