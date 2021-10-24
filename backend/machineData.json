@@ -1,6 +1,6 @@
 [
   {
-    "id": "fb94f208-6d34-425f-a3f8-e5b87794aef1",
+    "id": 946208,
     "name": "RIFD One",
     "sensors": [
       {
@@ -18,7 +18,7 @@
     }
   },
   {
-    "id": "fb94f208-6d34-425f-a3f8-e5b87794aef2",
+    "id": 946209,
     "name": "RIFD TWO",
     "sensors": [
       {

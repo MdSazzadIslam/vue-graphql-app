@@ -1,7 +1,8 @@
 scalar Date
+scalar Number
 
 type Machine {
-  id: String!
+  id: Number!
   name: String!
   sensors: [Sensor!]
   lastKnownPosition: GPSPosition
@@ -12,21 +13,21 @@ type GPSPosition {
   long: String
 }
 type Sensor {
-  id: String!
+  id: Number!
   name: String!
   machine: Machine!
 }
 
 type SensorDataPoint {
-  id: String!
+  id: Number!
   timestamp: Date!
   value: Float!
 }
 
 type Query {
-  machine(where: ID!): Machine
+  machine(id: Number!): [Machine]
   machines: [Machine!]
-  sensorData(id: ID!, from: Date!, to: Date!): [SensorDataPoint]
+  sensorData(id: Number!, from: Date!, to: Date!): [SensorDataPoint]
 }
 
 type Mutation {

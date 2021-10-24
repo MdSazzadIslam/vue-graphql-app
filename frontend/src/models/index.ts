@@ -5,7 +5,7 @@ export interface ApolloResponse {
   stale: boolean;
 }
 export interface ISensor {
-  id?: string;
+  id?: number;
   name: string;
 }
 
@@ -21,7 +21,7 @@ export interface ISensorDataPoint {
 }
 
 export interface IMachine {
-  id?: string;
+  id?: number;
   name: string;
   sensor: ISensor[];
   lastKnownPosition: IGPSPosition;

@@ -1,6 +1,7 @@
 import { IResolvers } from "@graphql-tools/utils";
 import { GraphQLResolveInfo } from "graphql";
-import Machine from "../../../mockdata.json";
+import Machine from "../../../machinedata.json";
+import Sensor from "../../../sensorData.json";
 
 const miningResolver: IResolvers = {
   Query: {
@@ -23,7 +24,7 @@ const miningResolver: IResolvers = {
       _info: GraphQLResolveInfo,
     ): Promise<any> => {
       try {
-        return null;
+        return Machine.filter(item => item.id === args.id);
       } catch (err) {
         throw new Error(err);
       }
@@ -36,7 +37,7 @@ const miningResolver: IResolvers = {
       _info: GraphQLResolveInfo,
     ): Promise<any> => {
       try {
-        return null;
+        return Sensor;
       } catch (err) {
         throw new Error(err);
       }
