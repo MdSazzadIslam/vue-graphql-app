@@ -10,8 +10,6 @@ A simple Node, GraphQL, Vue, and TypeScript application.
 
 > Typescript
 
-> Redis
-
 > Vue
 
 
@@ -25,7 +23,7 @@ To build and run this app locally you will need a few things:
 
 👷 How to run
 
-To run this application, you have to set your own MongoDB Atlas connection string and OpenWeatherAPI app id in environmental variables after that follow the bellow steps.
+To run this application follow the bellow steps.
 
 > git clone https://github.com/MdSazzadIslam/vue-graphql-app.git
 
