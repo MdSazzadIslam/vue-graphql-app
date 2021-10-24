@@ -47,6 +47,7 @@ const miningResolver: IResolvers = {
   Mutation: {
     addMachine: async (root: any, args: any, context: any): Promise<any> => {
       try {
+        //Need to implemented
         return null;
       } catch (err) {
         throw new Error(err);
