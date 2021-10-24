@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fb94f208-6d34-425f-a3f8-e5b87794aef1",
+    "name": "RIFD One",
+    "sensors": [
+      {
+        "id": "fb94f208-6d34-425f-a3f8-e5b87794aef2",
+        "name": "sensor A"
+      },
+      {
+        "id": "fb94f208-6d34-425f-a3f8-e5b87794aef3",
+        "name": "sensor B"
+      }
+    ],
+    "lastKnownPosition": {
+      "lat": "20.90",
+      "long": "100.92"
+    }
+  },
+  {
+    "id": "fb94f208-6d34-425f-a3f8-e5b87794aef2",
+    "name": "RIFD TWO",
+    "sensors": [
+      {
+        "id": "fb94f208-6d34-425f-a3f8-e5b87794aef4",
+        "name": "sensor A"
+      },
+      {
+        "id": "fb94f208-6d34-425f-a3f8-e5b87794aef5",
+        "name": "sensor B"
+      }
+    ],
+    "lastKnownPosition": {
+      "lat": "10.90",
+      "long": "20.92"
+    }
+  }
+]

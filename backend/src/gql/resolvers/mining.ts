@@ -1,5 +1,6 @@
 import { IResolvers } from "@graphql-tools/utils";
 import { GraphQLResolveInfo } from "graphql";
+import Machine from "../../../mockdata.json";
 
 const miningResolver: IResolvers = {
   Query: {
@@ -10,7 +11,7 @@ const miningResolver: IResolvers = {
       _info: GraphQLResolveInfo,
     ): Promise<any> => {
       try {
-        return null;
+        return Machine;
       } catch (err) {
         throw new Error(err);
       }

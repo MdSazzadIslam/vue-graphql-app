@@ -15,6 +15,7 @@ export interface IGPSPosition {
 }
 
 export interface ISensorDataPoint {
+  id?: string;
   timestamp: Date;
   value: number;
 }

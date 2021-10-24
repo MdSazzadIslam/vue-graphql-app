@@ -1,6 +1,7 @@
 scalar Date
 
 type Machine {
+  id: String!
   name: String!
   sensors: [Sensor!]
   lastKnownPosition: GPSPosition
@@ -8,14 +9,16 @@ type Machine {
 
 type GPSPosition {
   lat: String
-  log: String
+  long: String
 }
 type Sensor {
+  id: String!
   name: String!
   machine: Machine!
 }
 
 type SensorDataPoint {
+  id: String!
   timestamp: Date!
   value: Float!
 }
